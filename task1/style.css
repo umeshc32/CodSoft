@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 40px;
+}
+
+.logo span {
+    color: #f14a60;
+}
+
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 46px;
+    font-size: 24px;
+}
+
+a {
+    position: relative;
+    color: #333;
+    width: 19px;
+}
+
+a:before {
+    content: " ";
+    position: absolute;
+    bottom: 3px;
+    height: 3px;
+    width: 0px;
+    background: #f14a60;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+a:hover::before {
+    width: 50%;
+}
+
+.icons img {
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Adding a transition for a smoother effect */
+}
+
+.icons img:hover {
+    animation: shake 0.3s ease;
+    /* Applying the shake animation on hover */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.left {
+    flex-basis: 50%;
+    max-width: 400px;
+    padding-left: 40px;
+    margin: 0 100px;
+
+}
+
+.right {
+    flex-basis: 50%;
+
+}
+
+.right img {
+    width: 90%;
+
+}
+
+label {
+    position: relative;
+    background: white;
+
+}
+
+label img {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    width: 25px;
+}
+
+label input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 35px;
+
+}
+
+input[type="search"]:focus {
+    border: 2px solid #f14a60;
+    box-shadow: 0 0 5px #f14a60;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.line {
+    line-height: 12px;
+    margin: 20px 0;
+}
+
+.box1 {
+    width: 15px;
+    height: 15px;
+    background-color: #f12a60;
+}
+
+.box2 {
+    width: 50px;
+    height: 2px;
+    background-color: #f12a60;
+}
+
+.box3 {
+    width: 80px;
+    height: 2px;
+    background-color: #f12a60;
+}
+
+.left h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.left h2 {
+    color: gray;
+}
+
+.left button {
+    background: none;
+    outline: none;
+    border: 1px solid #f14a60;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px #f14a60;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left button:hover {
+    background-color: #f14a60;
+    color: #fff;
+}
+    .con2 {
+        background-color: rgba(0, 0, 0, 0.05);
+        display: flex;
+
+
+    }
+
+    .con2-right {
+        position: relative;
+        top: 200px;
+        right: 180px;
+        font-size: 20px;
+
+    }
+
+    .con2-right span {
+        font-size: 80px
+    }
+
+    .con2 img {
+        width: 50%;
+        padding: 40px 100px;
+
+    }
+
+    footer {
+        background-color: #ffc6cd;
+
+    }
+
+    .ig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ig img {
+        width: 25px;
+        margin: 90px 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .ig img:hover {
+        transform: scale(1.5);
+
+    }
